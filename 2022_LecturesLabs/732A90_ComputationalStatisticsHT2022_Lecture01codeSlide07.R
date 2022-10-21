@@ -1,0 +1,7 @@
+x<-0.5^10000;y<-0.4^10000;print(x/(x+y)+y/(x+y))
+x<-0.5^1000;y<-0.4^1000;print(x/(x+y)+y/(x+y)) 
+x<-0.1^1000;y<-0.2^1000;print(x/(x+y)+y/(x+y))
+readline()
+t<-rnorm(5,10^18,1);print(t[3]-t[4]);print(t[1]-t[2])
+readline()
+x<-10^800;sd<-10^400;y<-x/sd;print(y)

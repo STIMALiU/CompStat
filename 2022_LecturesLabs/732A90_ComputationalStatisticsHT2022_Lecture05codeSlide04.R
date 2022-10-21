@@ -1,0 +1,12 @@
+xplot<-seq(from=-5,to=5,by=0.001)
+plot(xplot,dnorm(xplot),pch=19,cex=0.2,xlab="x",ylab="f(x)",main="",cex.axis=1.5,cex.lab=1.3)
+points(xplot,dt(xplot,df=2),pch=19,cex=0.2,col=gray(0.5))
+points(xplot,dt(xplot,df=9),pch=19,cex=0.2,col="red")
+segments(-10, 0.1, -qnorm(0.975), 0.1,lwd=3);segments(qnorm(0.975), 0.1, 10, 0.1,lwd=3)
+segments(-qnorm(0.975), 0.1, -qnorm(0.975), -1,lwd=3,lty=2);segments(qnorm(0.975), 0.1, qnorm(0.975), -1,lwd=3,lty=2)
+segments(-10, 0.05, -qt(0.975,df=2), 0.05,lwd=3,col=gray(0.5));segments(qt(0.975,df=2), 0.05, 10, 0.05,lwd=3,col=gray(0.5))
+segments(-qt(0.975,df=2), 0.05, -qt(0.975,df=2), -1,lwd=3,lty=2,col=gray(0.5));segments(qt(0.975,df=2), 0.05, qt(0.975,df=2), -1,lwd=3,lty=2,col=gray(0.5))
+segments(-10, 0.07, -qt(0.975,df=9), 0.07,lwd=3,col="red");segments(qt(0.975,df=9), 0.07, 10, 0.07,lwd=3,col="red")
+segments(-qt(0.975,df=9), 0.07, -qt(0.975,df=9), -1,lwd=3,lty=2,col="red");segments(qt(0.975,df=9), 0.07, qt(0.975,df=9), -1,lwd=3,lty=2,col="red")
+legend("topright",col=c("black","red",gray(0.5)),pch=19,legend=c("N(0,1)","t(df=9)","t(df=2)"),bty="n",cex=2)
+
