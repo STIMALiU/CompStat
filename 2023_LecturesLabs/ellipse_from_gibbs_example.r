@@ -1,6 +1,6 @@
 ###############################
 ### Boundary ellipse 
-### for Gibbs sampler example
+### for Gibbs sampling example
 ### from Lecture 4
 ### Fall 2023, by Frank Miller
 ###############################
