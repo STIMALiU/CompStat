@@ -1,7 +1,7 @@
 # Analysis of July-rainfall data 1786 - 2018, Stockholm
 # for Computational Statistics, LiU
 # assign first your path where you have saved the data
-load("C:\\Users\\frami01\\Dropbox\\Teaching\\CompStat\\VT2025\\julyrain.RData")
+load(".../julyrain.RData")
 # Data source: SMHI; vector "mrain" contains the July-rain in these 233 years
 
 #Bootstrap analysis (own programming)
